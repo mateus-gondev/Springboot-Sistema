@@ -6,7 +6,7 @@ import com.seuprojeto.models.User;
 
 public interface MyRepository extends JpaRepository<User, Long> {
 
-    // Aqui eu botu as consultas 
+    //Aqui é uma interface JPA que fornece métodos para interagir com o banco de dados e realizar operações CRUD 
 }
 
     

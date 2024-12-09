@@ -9,7 +9,7 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.UUID;
 
-@Entity
+@Entity //Indica que essa classe é uma entidade JPA
 @Table(name = "TB_PROFESSOR")
 public class ProfessorModel implements Serializable{
     private static final long serialVersionUID = 1L;
