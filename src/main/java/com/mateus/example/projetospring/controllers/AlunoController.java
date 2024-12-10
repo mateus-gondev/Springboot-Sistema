@@ -4,13 +4,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.mateus.example.projetospring.Services.AlunoService;
 import com.mateus.example.projetospring.models.AlunoModel;
 import com.mateus.example.projetospring.repositories.AlunoRepository;
 
@@ -20,12 +18,11 @@ public class AlunoController {
     @Autowired // Ponto de Injeção para a intercafe
     AlunoRepository alunoRepository;
 
-    /*
-     * @PostMapping("/create")
-     * public ResponseEntity<AlunoModel> create(@RequestBody AlunoModel aluno) {
-     * return ResponseEntity.ok(alunoService.save(aluno));
-     * }
-     */
+    // Construtor para criar um Aluno
+    @PostMapping("/create")
+    public ResponseEntity<Object> create(@RequestBody AlunoModel aluno) {
+        return ResponseEntity.ok(AlunoService.save(aluno));
+    }
 
     /*
      * @GetMapping //Lista tudo
