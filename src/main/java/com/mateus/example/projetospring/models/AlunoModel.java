@@ -1,7 +1,7 @@
 package com.mateus.example.projetospring.models;
 
 import jakarta.persistence.*;
-import java.io.Serializable; //interface de marcação
+import java.io.Serializable; //interface de marcação, config padrao 
 import java.util.UUID;
 
 @Entity // Indica que essa classe é uma entidade JPA
@@ -52,6 +52,7 @@ public class AlunoModel implements Serializable {
     public String status() {
         return status;
     }
+
     public void setstatus(String status) {
         this.status = status;
     }

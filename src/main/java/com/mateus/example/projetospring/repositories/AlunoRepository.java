@@ -1,9 +1,9 @@
 package com.mateus.example.projetospring.repositories;
 
+import com.mateus.example.projetospring.models.AlunoModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.mateus.example.projetospring.models.AlunoModel;
 import java.util.UUID;
 
 @Repository
