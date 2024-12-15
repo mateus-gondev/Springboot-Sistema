@@ -8,7 +8,7 @@ import com.mateus.example.projetospring.service.ProfessorService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/professors")
+@RequestMapping("/professores")
 public class ProfessorController {
     private final ProfessorService professorService;
 
