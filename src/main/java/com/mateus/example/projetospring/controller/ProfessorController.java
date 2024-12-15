@@ -1,27 +1,28 @@
 package com.mateus.example.projetospring.controller;
 
-//Anotações do Spring que mapeiam requisições HTTP
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import com.mateus.example.projetospring.models.Professor;
+import com.mateus.example.projetospring.service.ProfessorService;
+
 import java.util.List;
 
-@RestController //Indica que essa classe é um controlador REST
-@RequestMapping("/professores")
+@RestController
+@RequestMapping("/professors")
 public class ProfessorController {
+    private final ProfessorService professorService;
 
-    @Autowired //Permite a injeção de dependências
-    private ProfessorRepository professorRepository;
+    public ProfessorController(ProfessorService professorService) {
+        this.professorService = professorService;
+    }
 
-    @GetMapping 
-    public List<ProfessorModel> getAllProfessores() {
-        return professorRepository.findAll();
+    @GetMapping
+    public List<Professor> getAllProfessors() {
+        return professorService.findAll();
     }
 
     @PostMapping
-    public ProfessorModel createProfessor(@RequestBody ProfessorModel professor) {
-        return professorRepository.save(professor);
+    public Professor createProfessor(@RequestBody Professor professor) {
+        return professorService.save(professor);
     }
 }
