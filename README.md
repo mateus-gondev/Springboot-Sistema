@@ -47,7 +47,7 @@ Spring Data JPA - SQL
 
 Realizar o build do projeto.
 ~~~ java
-Spring Boot 3.4.0
+mvn clean package -D skiptests
 ~~~
 
 Executar o projeto localmente.
@@ -69,3 +69,10 @@ Informações das tabelas e estruturas (adicione um link ou descrição das plan
 ~~~ 
 Credenciais de acesso para desenvolvimento local (se aplicável).
 ~~~
+
+## Docker
+Rodar o comando
+
+```
+docker-compose up --build
+```
