@@ -10,65 +10,67 @@ Este projeto é uma API Rest desenvolvido por Mateus Rodrigues, Larissa Ricarte 
 
 ## Tecnologias Usadas
 
-~~~
+```
 Java - 17
-~~~
+```
 
-~~~
+```
 Spring Boot 3.4.0
-~~~
+```
 
-~~~
-JDK ?
-~~~
+```
+JDK 17
+```
 ## Dependências Adicionais
 
-~~~
+```
 Lombok - Developer Tools
-~~~
+```
 
-~~~
+```
 Spring Boot DevTools - Developer Tools
-~~~
+```
 
-~~~
+```
 Spring Web - Web
-~~~
+```
 
-~~~
+```
 PostgreSQL Driver - SQL
-~~~
+```
 
-~~~
+```
 Spring Data JPA - SQL
-~~~
+```
 
 ## Comandos Úteis
 
 Realizar o build do projeto.
-~~~ java
+``` bash
 mvn clean package -D skiptests
-~~~
+```
 
 Executar o projeto localmente.
-~~~ java
+``` bash
 java -jar target/Springboot-Sistema-Acadêmico-0-1.0-SNAPSHOT.jar
-~~~
+```
 
 ## Configurações PostgreSQL
 
 
-~~~
-Versão do banco de dados utilizado (ex.: MySQL, PostgreSQL).
-~~~
+```
+PostgreSQL
+```
 
-~~~ 
-Informações das tabelas e estruturas (adicione um link ou descrição das planilhas necessárias para criar as tabelas).
-~~~
+``` 
+Informações das tabelas e estruturas ( https://drive.google.com/file/d/18DLIvknkmk5pyNieU9S2eS-z9nOrW4RG/view?usp=sharing ).
+```
 
-~~~ 
-Credenciais de acesso para desenvolvimento local (se aplicável).
-~~~
+## Credenciais de acesso para desenvolvimento local
+```
+    postgres
+    12345
+```
 
 ## Docker
 Rodar o comando
@@ -76,3 +78,4 @@ Rodar o comando
 ```
 docker-compose up --build
 ```
+
