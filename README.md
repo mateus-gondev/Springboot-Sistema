@@ -47,7 +47,7 @@ Spring Data JPA - SQL
 
 Realizar o build do projeto.
 ``` bash
-mvn clean package -D skiptests
+mvn clean package -Dskiptests
 ```
 
 Executar o projeto localmente.
